@@ -3,6 +3,8 @@
 <h3> A simple clone of the IOS Calculator </h3>
 <h4> Built using HTML, CSS and Javascript </h4>
 
+Demo
+
 <h2> Features </h2>
 <ul>
 <li> Basic Operations (+, -, *, /) </li>
