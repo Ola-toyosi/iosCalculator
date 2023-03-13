@@ -1,0 +1,91 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+#container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="button"], input[type="text"] {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+} 
+
+form {
+    width: 301px;
+}
+
+#display input {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    color: #FFF;
+    text-align: right;
+    font-size: 53px;
+    font-weight: 100;
+}
+
+input[type="text"]#screen {
+    padding-bottom: 0px;
+    line-height: 2px;
+    padding-right: 10px;
+    padding-left: 0px;
+}
+
+#keypad {
+    border-right: 1px solid #000;
+    align-content: center;
+}
+
+#keypad input[type="button"] {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 0;
+    cursor: pointer;
+    background-color: rgb(31, 30, 30);
+    font-size: 24px;
+    font-weight: 100;
+    color: #ffffff;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 50%;
+}
+
+input.regular {
+    margin: 0;
+}
+
+input[type="button"]#large {
+    width: 110px;
+    border-radius: 20px;
+    padding-right: 50px;
+
+}
+
+#keypad input[type="button"].color{
+    background-color: rgb(255, 89, 0); 
+    color: #FFF;
+}
+
+#keypad input[type="button"].light {
+    background-color: rgb(143, 142, 142);
+    color: #000;
+}
