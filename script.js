@@ -47,8 +47,6 @@ function calculate() {
     var evalValue = ""
     displayValue = display.value
 
-    console.log(eval(display.value))
-
     display.value = eval(display.value)
 
     try {
