@@ -43,9 +43,8 @@ function plusOrMinus() {
 // Pressing "=" calacualtes the input data and returns result
 function calculate() {
   var evalValue = "";
-  displayValue = display.value;
-
-  display.value = eval(display.value);
+  var displayValue = (display.value).replace(/ /g,'');
+  resetFontSize();
 
   try {
     evalValue = eval(displayValue).toString();
