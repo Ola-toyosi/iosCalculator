@@ -24,7 +24,7 @@ function addToScreen(button) {
     display.value = displayValue.slice(0,14);
 };
 
-/* Reset screen font-size to original size  */
+/* Reset display font-size to initial size  */
 function resetFontSize() {
     display.style.fontSize = "53px";
 }
@@ -38,4 +38,29 @@ function clearScreen() {
 /* pressing "+/-" button switches displayed number from positive to negative */
 function plusOrMinus() {
     display.value = -display.value
+}
+
+
+// Pressing "=" calacualtes the input data and returns result
+function calculate() {
+
+    var evalValue = ""
+    displayValue = display.value
+
+    console.log(eval(display.value))
+
+    display.value = eval(display.value)
+
+    try {
+        evalValue = eval(displayValue).toString();
+        if(evalValue.length > 8) {
+            display.style.fontSize = "35px";
+            evalValue = parseFloat(evalValue).toExponential(3);
+        }
+        display.value = evalValue;
+    }
+    catch(err) {
+        display.value = display.value = "Error";
+    }
+
 }
