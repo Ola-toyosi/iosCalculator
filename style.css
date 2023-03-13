@@ -89,3 +89,16 @@ input[type="button"]#large {
     background-color: rgb(143, 142, 142);
     color: #000;
 }
+
+
+footer {
+    text-align: center;
+    font-family: 'Roboto', serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: purple;
+}
